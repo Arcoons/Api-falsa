@@ -1,5 +1,5 @@
 const moongose = require('mongoose');
-const Album = require('../model/album');
+const Album = require('../models/album');
 
 
 const findAllAlbumes = (req, res) => {
