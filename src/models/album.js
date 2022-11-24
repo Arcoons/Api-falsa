@@ -1,13 +1,11 @@
 const mongoose= require('mongoose');
-const {Schema, model}=mongoose.Schema;
+const Schema=mongoose.Schema;
 
 const AlbumSchema=new Schema({
-    _id:{type: int},
-    idAlbum:int,
-    nombreAlbum:String,
-    anioPublicacion:int,
-    idCancion:int,
-    idGenero:int
+    _id:Number,
+    idAlbum:Number,
+    nombreAlbum: String,
+    anioPublicacion:Number,
 });
 
 module.exports= mongoose.model('album', AlbumSchema);

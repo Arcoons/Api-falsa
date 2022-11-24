@@ -2,10 +2,10 @@ const mongoose= require('mongoose');
 const Schema=mongoose.Schema;
 
 const GeneroSchema=new Schema({
-    _id:int,
-    idGenero:int,
+    _id:Number,
+    idGenero:Number,
     nombreGenero:String,
-    Descripcion:int
+    Descripcion:String
 });
 
 module.exports= mongoose.model('genero', GeneroSchema);

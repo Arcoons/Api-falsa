@@ -5,12 +5,12 @@ const rutasAlbum = require('./routes/album.routes');
 const rutasCancion=require('./routes/cancion.routes');
 const rutasGenero=require('./routes/genero.routes');
 const app = express()
-const port= process.env.PORT || 4000;
+const port= process.env.PORT || 3000;
 conexionBD();
 
 
 app.set("name","disquera");
-app.set("port",process.env.port || 4000);
+app.set("port",process.env.port || 3400);
 
 
 app.use(express.json());

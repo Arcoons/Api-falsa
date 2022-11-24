@@ -2,11 +2,11 @@ const mongoose= require('mongoose');
 const Schema=mongoose.Schema;
 
 const CancionSchema=new Schema({
-    _id:int,
-    idCancion:int,
+    _id:Number,
+    idCancion:Number,
     nombreCancion:String,
-    duracionCancion:int,
-    idAlbum:int
+    duracionCancion:Number,
+    idAlbum:Number
 });
 
 module.exports=mongoose.model('cancion', CancionSchema);
